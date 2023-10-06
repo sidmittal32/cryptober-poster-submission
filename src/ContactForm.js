@@ -30,7 +30,7 @@ function ContactForm() {
         // add some additional data if you want
         // formData.append('language', window.navigator.language)
 
-        fetch('https://formcarry.com/s/H-FXYabf5A', {
+        fetch('https://formcarry.com/s/{YOUR FORM CODE}', {
             method: 'POST',
             enctype: 'multipart/form-data',
             body: formData,
@@ -111,7 +111,7 @@ function ContactForm() {
                         </div>
                         <div className="mb-4 flex justify-center items-center">
                             <ReCAPTCHA
-                                sitekey="6LfBrHsoAAAAAOGpvntNlgD71s8VT1CeV9ZM16H6"
+                                sitekey="{YOUR SITE KEY}"
                                 onChange={handleRecaptchaChange}
                             />
                         </div>
